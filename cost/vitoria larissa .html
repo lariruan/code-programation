@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="japp()">batata frita</button><br><br>
+    <button onclick="calcIdade()">larissa</button>
+</body>
+
+</html>
+<script>
+    function japp() {
+        alert("parabens vc ganhou batatinha frita")
+        var a = Number(prompt("digite o valor de a"))
+        var b = Number(prompt("digite o valor de b"))
+        var c = Number(prompt("digite o valor de c"))
+        var delta = b * b - 4* a * c;
+        var x1 = (-b + Math.sqrt(delta)) / 2 * a
+        var x2 = (-b - Math.sqrt(delta)) / 2 * a
+        var mensagem = "o resultado do x1 é: " + x1 + ", o resultado de x2 é: " + x2;
+        alert(mensagem)
+
+    } 
+    function calcIdade(){
+        var anonasc = Number(prompt("digite aqui o ano que voce nasceu"))
+        var idade = 2022 - anonasc;
+        var msg = "no final de 2022 voce tera"  + idade + " anos . \n "
+        if   (idade < 18){
+            msg += "portanto, e menor de idade!\n";
+    }
+    else {
+        msg += "portanto, é maior de idade!\n";
+    }if(idade % 2 == 0){  
+        msg += "sua idade é par ;"
+    } 
+    else{ 
+        msg+= "sua idade é impar ;"
+    } alert  (msg)
+
+    }
+
+
+
+</script>
